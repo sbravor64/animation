@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.fondo{
+  position: relative;
+  background: url(images/full-background-circus.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: animation 45s steps(1000) infinite forwards;
+}
+
+
+#runner{
+  background:url("https://image.ibb.co/dsiShS/sprite_walk.png");
+  width:521px;
+  height: 576px;
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  min-width: 521px;
+  max-width: 521px;
+  animation: run 1s steps(10) infinite;
+
+}
+
+
+@keyframes run {
+  100% { background-position: -5210px; }
+}
+
+@keyframes animation {
+  0% { background-position: left top; }
+  100% { background-position: right top; }
+}
