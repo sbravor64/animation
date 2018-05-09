@@ -14,6 +14,45 @@ body{
 }
 
 
+#nuve{
+  background-image: url("images/goku-nube.png");
+  width:150px;
+  height: 170px;
+  background-size: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 80%;
+  margin-left: -302px;
+  animation: slide-right 45s steps(1000) infinite forwards, down-up 20s steps(1000) infinite forwards;
+}
+
+@keyframes slide-right {
+  100% { margin-left: 2024px; }
+}
+
+#nuve-1{
+  background-image: url("images/nube.png");
+  width:280px;
+  height: 110px;
+  background-size: 100%;
+  position: absolute;
+  bottom: 80%;
+  top: 0;
+  right: 0;
+  margin-right: -302px;
+  animation: slide-left 45s steps(1000) infinite forwards, down-up 20s steps(1000) infinite forwards;
+}
+
+@keyframes slide-left {
+  100% { margin-right: 2024px; }
+}
+
+@keyframes down-up {
+  50% { margin-top: 100px;}
+  100% { margin-top: 0px; }
+}
+
+
 #runner{
   background:url("https://image.ibb.co/dsiShS/sprite_walk.png");
   width:521px;
@@ -35,4 +74,17 @@ body{
 @keyframes animation {
   0% { background-position: left top; }
   100% { background-position: right top; }
+}
+
+
+#muerto{
+  background-image: url("images/muerto.png");
+  width:380px;
+  height: 175px;
+  background-size: cover;
+  position: absolute;
+  top: 80%;
+  right: 0;
+  margin-right: -355px;
+  animation: slide-left 12s steps(1000) infinite forwards;
 }
